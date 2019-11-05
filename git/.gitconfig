@@ -1,0 +1,8 @@
+[user]
+	name = Marcel Guzik
+	email = mguzik555@gmail.com
+[core]
+	editor = nvim
+[alias]
+	gud = status
+	seba = reset --hard HEAD
