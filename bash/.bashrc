@@ -117,7 +117,10 @@ if ! shopt -oq posix; then
 fi
 
 # wal
-(cat ~/.cache/wal/sequences &)
+# don't enable when running konsole
+if [ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" != "/usr/bin/konsole" ]; then
+	(cat ~/.cache/wal/sequences &)
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
