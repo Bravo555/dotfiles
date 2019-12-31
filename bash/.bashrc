@@ -118,8 +118,10 @@ fi
 
 # wal
 # don't enable when running konsole
-if [ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" != "/usr/bin/konsole" ]; then
-	(cat ~/.cache/wal/sequences &)
+if [ -d "$HOME/.cache/wal" ]; then
+	if [ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" != "/usr/bin/konsole" ]; then
+		(cat ~/.cache/wal/sequences &)
+	fi
 fi
 
 export NVM_DIR="$HOME/.nvm"
