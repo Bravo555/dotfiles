@@ -185,7 +185,7 @@ smart_gaps inverse_outer
 smart_borders on
 
 # lock
-bindsym $mod+l exec i3lock
+bindsym $mod+l exec "i3lock -fo  -r 30 -s 15"
 
 # launch compositor
 exec --no-startup-id "picom --experimental-backends"
