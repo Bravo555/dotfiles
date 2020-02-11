@@ -56,8 +56,8 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
-modules-center = 
-modules-right = pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-center = xwindow
+modules-right = pulseaudio memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -329,7 +329,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
-battery = BAT0
+battery = BAT1
 adapter = ADP1
 full-at = 98
 
