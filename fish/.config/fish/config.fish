@@ -1,3 +1,3 @@
 if [ -d "$HOME/.cache/wal" ]
-	cat "$HOME/.cache/wal/sequences" &
+	/bin/cat "$HOME/.cache/wal/sequences" &
 end
