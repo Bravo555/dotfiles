@@ -188,4 +188,9 @@ smart_borders on
 bindsym $mod+l exec "i3lock -fo  -r 30 -s 15"
 
 # launch compositor
-exec --no-startup-id "picom --experimental-backends"
+exec_always --no-startup-id "picom -C --experimental-backends" 
+
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+# set wallpaper
+exec --no-startup-id feh --bg-scale Pictures/wallpapers/skaven.jpg
