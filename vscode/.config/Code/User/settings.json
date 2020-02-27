@@ -23,7 +23,7 @@
     "[cpp]": {
         "editor.formatOnSave": false
     },
-    "editor.fontSize": 13,
+    "editor.fontSize": 12,
     "editor.rulers": [
         120
     ]
