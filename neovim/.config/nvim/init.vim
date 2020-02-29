@@ -10,4 +10,5 @@ let g:vimtex_view_method = 'zathura'
 
 call plug#begin()
 Plug 'lervag/vimtex'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 call plug#end()
