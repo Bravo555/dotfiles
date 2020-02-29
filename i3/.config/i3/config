@@ -193,7 +193,9 @@ exec_always --no-startup-id "compton --config $XDG_CONFIG_HOME/compton/compton.c
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
+# screenshot bindings
 bindsym --release Control+Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png"
 bindsym --release Print exec --no-startup-id "maim | xclip -selection clipboard -t image/png"
+bindsym --release Shift+Print exec --no-startup-id "maim $HOME/Pictures/screenshots/$(date +%Y-%m-%dT%H:%M:%S).png"
 # set wallpaper
 exec --no-startup-id feh --bg-scale Pictures/wallpapers/skaven.jpg
