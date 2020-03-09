@@ -51,9 +51,11 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = misc fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-0 = misc fixed:size=11;1
+font-1 = unifont:size=10:antialias=false;0
+font-2 = DejaVu Math Tex Gyre:size=10;0
+font-3 = siji:size=13;1
+font-4 = Noto Color Emoji:scale=9;2
 
 modules-left = bspwm i3
 modules-center = xwindow
@@ -80,6 +82,7 @@ cursor-scroll = ns-resize
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:60:...%
+label-font = 2
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -134,6 +137,7 @@ type = internal/i3
 format = <label-state> <label-mode>
 index-sort = false
 wrapping-scroll = false
+strip-wsnumbers = true
 
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true

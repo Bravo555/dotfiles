@@ -106,7 +106,7 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
-set $ws2 "2"
+set $ws2 "2: "
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
@@ -114,7 +114,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+set $ws10 "10: misc"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -187,9 +187,6 @@ smart_borders on
 # lock
 bindsym $mod+l exec "i3lock -fo  -r 30 -s 15"
 
-# launch compositor
-exec_always --no-startup-id "compton --config $XDG_CONFIG_HOME/compton/compton.conf &" 
-
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
@@ -197,5 +194,12 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 bindsym --release Control+Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png"
 bindsym --release Print exec --no-startup-id "maim | xclip -selection clipboard -t image/png"
 bindsym --release Shift+Print exec --no-startup-id "maim $HOME/Pictures/screenshots/$(date +%Y-%m-%dT%H:%M:%S).png"
+
 # set wallpaper
 exec --no-startup-id feh --bg-scale Pictures/wallpapers/skaven.jpg
+
+# launch compositor
+exec_always --no-startup-id "compton -C --config $XDG_CONFIG_HOME/compton/compton.conf &" 
+
+# misc bindings
+bindsym $mod+B exec $BROWSER
