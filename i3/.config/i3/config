@@ -196,7 +196,7 @@ bindsym --release Print exec --no-startup-id "maim | xclip -selection clipboard 
 bindsym --release Shift+Print exec --no-startup-id "maim $HOME/Pictures/screenshots/$(date +%Y-%m-%dT%H:%M:%S).png"
 
 # set wallpaper
-exec --no-startup-id feh --bg-scale Pictures/wallpapers/skaven.jpg
+exec --no-startup-id "~/.fehbg &"
 
 # launch compositor
 exec_always --no-startup-id "compton -C --config $XDG_CONFIG_HOME/compton/compton.conf &" 
