@@ -199,7 +199,7 @@ bindsym --release Shift+Print exec --no-startup-id "maim $HOME/Pictures/screensh
 exec --no-startup-id "~/.fehbg &"
 
 # launch compositor
-exec_always --no-startup-id "compton -C --config $XDG_CONFIG_HOME/compton/compton.conf &" 
+exec_always --no-startup-id "picom -C --experimental-backends &" 
 
 # misc bindings
 bindsym $mod+B exec $BROWSER
