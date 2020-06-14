@@ -1,18 +1,28 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR ALSA_CARD:PCH
+SETUVAR --export BAT_THEME:\x1d
 SETUVAR EDITOR:nvim
 SETUVAR --path GOPATH:/home/marcel/go/
+SETUVAR --export MANPAGER:sh\x20\x2dc\x20\x27col\x20\x2dbx\x20\x7c\x20bat\x20\x2dl\x20man\x20\x2dp\x27
 SETUVAR NVM_DIR:/home/marcel/\x2envm
 SETUVAR TERMINAL:alacritty
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_cat:bat
+SETUVAR _fish_abbr_cl:clear
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gc:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gp:git\x20push
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_l:exa
+SETUVAR _fish_abbr_la:exa\x20\x2dla
+SETUVAR _fish_abbr_ll:exa\x20\x2dl
+SETUVAR _fish_abbr_lll:exa\x20\x2dla
+SETUVAR _fish_abbr_ls:exa
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:b294bb
